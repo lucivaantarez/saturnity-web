@@ -2,22 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  background-color: #0a0a1a;
-  color: #ffffff;
-}
-
-html,
 body {
-  max-width: 100vw;
+  background: #050510;
+  color: white;
   overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-tap-highlight-color: transparent; 
-  scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-  display: none;
+/* Efek Bintang halus di background */
+.space-bg {
+  background: radial-gradient(circle at center, #1a1a3a 0%, #050510 100%);
+  position: fixed;
+  inset: 0;
+  z-index: -1;
 }
 
+.stars {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(1px 1px at 20px 30px, #fff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 40px 70px, #fff, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0));
+  background-size: 200px 200px;
+  opacity: 0.3;
+}
