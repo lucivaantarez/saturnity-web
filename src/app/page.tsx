@@ -1,7 +1,9 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
-import { motion, useInView } from "framer-motion";
+"use client";
+
+import { useState } from "react";
+import { motion } from "framer-motion";
 import confetti from "canvas-confetti";
 
 export default function SaturnityApp() {
